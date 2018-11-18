@@ -22,6 +22,22 @@
      <height>150</height>
     </rect>
    </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>430</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/image/header.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QWidget" name="Login_Func" native="true">
    <property name="geometry">
@@ -32,16 +48,9 @@
      <height>150</height>
     </rect>
    </property>
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>95</width>
-      <height>90</height>
-     </rect>
-    </property>
-   </widget>
+   <property name="styleSheet">
+    <string notr="true">image:url(:/image/blue.png)</string>
+   </property>
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
@@ -53,10 +62,14 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="number"/>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_2"/>
+      <widget class="QLineEdit" name="passwd">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -66,21 +79,35 @@
       <x>140</x>
       <y>90</y>
       <width>201</width>
-      <height>21</height>
+      <height>23</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QCheckBox" name="checkBox_2">
+      <widget class="QCheckBox" name="checkBox_remenber">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>CheckBox</string>
+        <string>记住密码</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox">
+      <widget class="QCheckBox" name="checkbox_autologin">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>CheckBox</string>
+        <string>自动登陆</string>
        </property>
       </widget>
      </item>
@@ -97,22 +124,36 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="bnt_regist">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string>注册账号</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="bnt_reback">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>TextLabel</string>
+        <string>找回密码</string>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton_8">
+   <widget class="QPushButton" name="login">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -121,12 +162,40 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>登陆</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>95</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/image/header.jpg)</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../static/resource/login_header_default.qrc"/>
+ </resources>
  <connections/>
 </ui>

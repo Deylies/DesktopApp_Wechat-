@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="image">
+    <file>header.png</file>
+    <file>header.jpg</file>
+    <file>blue.png</file>
+  </qresource>
+</RCC>
